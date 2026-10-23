@@ -1,0 +1,7 @@
+{
+  "name": "stramo-nettside-v2",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Stramo AS – enkel statisk nettside for utprøving på GitHub Pages",
+  "scripts": { "start": "node preview.mjs" }
+}
