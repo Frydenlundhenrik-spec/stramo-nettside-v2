@@ -1,159 +1,94 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="nb">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Stramo AS – Kjøle- og fryserom, bygg og montasje</title>
-  <meta name="description" content="Stramo AS leverer kjøle- og fryserom, bygg og montasje, med tegninger og dokumentasjon tilpasset oppdraget. Kontakt oss i Fredrikstad på 69 87 87 77.">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="theme-color" content="#003c52">
-  <meta property="og:title" content="Stramo AS – Rom for gode løsninger">
-  <meta property="og:description" content="Kjøle- og fryserom, bygg og montasje. Godt utført. Godt dokumentert.">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="nb_NO">
-  <meta property="og:image" content="https://frydenlundhenrik-spec.github.io/stramo-nettside-v2/assets/stramo-logo.png">
-  <link rel="icon" href="assets/stramo-logo.png" type="image/png">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Stramo AS – Kjøle- og fryseromsløsninger</title>
+<meta name="description" content="Stramo AS – kjøle- og fryseromsløsninger. Kontakt oss på Kampenveien 4, 1618 Fredrikstad eller ring 69 87 87 77.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Stramo AS – Kjøle- og fryseromsløsninger">
+<meta property="og:description" content="Kontaktinformasjon og adresse til Stramo AS.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://frydenlundhenrik-spec.github.io/stramo-nettside-v2/assets/logo.png">
+
+<link rel="icon" href="assets/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <a class="skip-link" href="#innhold">Hopp til innhold</a>
-  <header class="site-header">
-    <div class="header-inner wrap">
-      <a class="brand" href="#topp" aria-label="Stramo AS – til toppen">
-        <img src="assets/stramo-logo.png" alt="Stramo AS" width="1600" height="740">
-      </a>
-      <button class="menu-toggle" type="button" aria-controls="hovedmeny" aria-expanded="false" hidden>
-        <span>Meny</span><span class="menu-lines" aria-hidden="true"></span>
-      </button>
-      <nav id="hovedmeny" class="main-nav" aria-label="Hovedmeny">
-        <a href="#tjenester">Våre tjenester</a>
-        <a href="#dokumentasjon">Dokumentasjon</a>
-        <a href="#om-oss">Om Stramo</a>
-        <a class="button button-small" href="#kontakt">Ta kontakt <span aria-hidden="true">↗</span></a>
-      </nav>
+
+<main class="page">
+  <nav class="login-nav" aria-label="Innlogging til Stramo-appene">
+    <details class="login-picker">
+      <summary>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 4h6v16h-6M3 12h12m-4-4 4 4-4 4"/></svg>
+        Logg inn
+        <svg class="login-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+      </summary>
+      <div class="login-options">
+        <p class="login-label">Velg app</p>
+        <a href="https://stramo-flyt-time-avvik.candid-pine-4284.chatgpt.site/login" target="_blank" rel="noopener noreferrer">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></svg>
+          <span><strong>Timeregistrering</strong><small>Stramo Flyt</small></span><span aria-hidden="true">↗</span><span class="sr-only"> (åpner i ny fane)</span>
+        </a>
+        <a href="https://stramo-as-n7zzenre2auarxeuzha8pk.streamlit.app/" target="_blank" rel="noopener noreferrer">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 2v20M3.34 7l17.32 10M3.34 17 20.66 7M9 4l3 3 3-3M9 20l3-3 3 3"/></svg>
+          <span><strong>Kjøl og frys</strong><small>Stramo kjøleromssystem</small></span><span aria-hidden="true">↗</span><span class="sr-only"> (åpner i ny fane)</span>
+        </a>
+      </div>
+    </details>
+  </nav>
+  <div class="intro reveal">
+    <img src="assets/logo.png" alt="Stramo AS" class="logo">
+    <p class="tagline">Leverandør av kjøl og fryserom</p>
+  </div>
+
+  <div class="contact-grid reveal">
+    <div class="contact-card">
+      <div class="contact-row">
+        <span class="ic">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        </span>
+        <div>
+          <h4>Besøksadresse</h4>
+          <p>Kampenveien 4, 1618 Fredrikstad</p>
+        </div>
+      </div>
+      <div class="contact-row">
+        <span class="ic">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </span>
+        <div>
+          <h4>Telefon</h4>
+          <a class="link" href="tel:+4769878777">69 87 87 77</a>
+        </div>
+      </div>
+      <div class="contact-row">
+        <span class="ic">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        </span>
+        <div>
+          <h4>Åpningstider</h4>
+          <p>Mandag–fredag · 10:00–14:00</p>
+        </div>
+      </div>
+      <div class="contact-actions">
+        <a href="mailto:post@stramo.no" class="btn btn-primary">Send oss e-post</a>
+      </div>
     </div>
-  </header>
+  </div>
 
-  <main id="innhold">
-    <section class="hero wrap" id="topp" aria-labelledby="hero-heading">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="yellow-line" aria-hidden="true"></span> STRAMO AS · FREDRIKSTAD</p>
-        <h1 id="hero-heading">Rom for<br>gode <span class="highlight">løsninger.</span></h1>
-        <p class="hero-intro">Kjøle- og fryserom.<br>Bygg og montasje.</p>
-        <p class="hero-description">Vi hjelper deg fra behov og tegning til ferdig montert løsning – med dokumentasjonen på plass.</p>
-        <div class="hero-actions">
-          <a class="button" href="#kontakt">La oss snakke om ditt prosjekt <span aria-hidden="true">↗</span></a>
-          <a class="text-link" href="#tjenester">Se hva vi leverer <span aria-hidden="true">↓</span></a>
-        </div>
-      </div>
-      <figure class="hero-visual">
-        <img src="assets/kjolerom-hall.jpg" alt="Lys industrihall med isolerte veggpaneler og stålkonstruksjoner" width="2048" height="1536" fetchpriority="high">
-        <figcaption>
-          <span class="image-tag">LØSNINGER SOM PASSER OPPDRAGET</span>
-          <span class="image-credit">Illustrasjonsfoto · Balex Metal</span>
-        </figcaption>
-        <span class="corner-accent" aria-hidden="true"></span>
-      </figure>
-    </section>
-
-    <div class="service-strip">
-      <div class="wrap strip-inner">
-        <span><span aria-hidden="true">01</span> Kjøle- og fryserom</span>
-        <span><span aria-hidden="true">02</span> Bygg og montasje</span>
-        <span><span aria-hidden="true">03</span> Tegninger og dokumentasjon</span>
-      </div>
-    </div>
-
-    <section class="section wrap" id="tjenester" aria-labelledby="services-heading">
-      <div class="section-heading">
-        <div><p class="eyebrow">DETTE LEVERER VI</p><h2 id="services-heading">Ditt behov.<br>Vår oppgave.</h2></div>
-        <p>Hvert prosjekt har sine mål og rammer. Sammen finner vi løsningen som passer rommet, bruken og hverdagen din.</p>
-      </div>
-      <div class="services">
-        <article class="service">
-          <div class="service-top"><span class="service-number">01 /</span><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20 3v34M5.3 11.5l29.4 17M5.3 28.5l29.4-17M15 7l5 5 5-5M15 33l5-5 5 5M6 17l6.8-1.8L11 8.4M29 31.6l-1.8-6.8L34 23M11 31.6l1.8-6.8L6 23M34 17l-6.8-1.8L29 8.4"/></svg></div>
-          <h3>Kjøle- og fryserom</h3>
-          <p>Romløsninger tilpasset dine mål og behov. Vi hjelper med planlegging, paneler og montasje av kjøle- og fryserom.</p>
-          <a class="text-link" href="mailto:post@stramo.no?subject=Foresp%C3%B8rsel%20om%20kj%C3%B8le-%20og%20fryserom">Snakk med oss om rommet ditt <span aria-hidden="true">↗</span></a>
-        </article>
-        <article class="service">
-          <div class="service-top"><span class="service-number">02 /</span><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 35V14L20 5l15 9v21H5ZM5 14h30M14 14v21M26 14v21M5 25h30M20 5v9"/></svg></div>
-          <h3>Bygg og montasje</h3>
-          <p>Praktisk gjennomføring av bygge- og montasjeoppdrag. Ta kontakt for å avklare omfang, løsning og fremdrift.</p>
-          <a class="text-link" href="mailto:post@stramo.no?subject=Foresp%C3%B8rsel%20om%20bygg%20og%20montasje">Fortell oss om oppdraget <span aria-hidden="true">↗</span></a>
-        </article>
-        <article class="service">
-          <div class="service-top"><span class="service-number">03 /</span><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M9 4h15l8 8v24H9V4ZM24 4v9h8M15 20h11M15 25h11M15 30h7"/></svg></div>
-          <h3>Tegninger og dokumentasjon</h3>
-          <p>Et oversiktlig underlag før, under og etter arbeidet. Tegninger og dokumentasjon tilpasset det vi leverer.</p>
-          <a class="text-link" href="#dokumentasjon">Se hva du får oversikt over <span aria-hidden="true">↓</span></a>
-        </article>
-      </div>
-    </section>
-
-    <section class="documentation" id="dokumentasjon" aria-labelledby="docs-heading">
-      <div class="wrap docs-layout">
-        <div class="docs-copy">
-          <p class="eyebrow">OVERSIKT HELE VEIEN</p>
-          <h2 id="docs-heading">Godt utført.<br><span>Godt dokumentert.</span></h2>
-          <p>Hos Stramo AS leverer vi tegninger og dokumentasjon tilpasset jobben vi utfører. Med oversiktlige montasjetegninger, materialoversikter, fotodokumentasjon og FDV får du et ryddig grunnlag for både gjennomføring, drift og vedlikehold.</p>
-          <a class="text-link light-link" href="mailto:post@stramo.no?subject=Tegninger%20og%20dokumentasjon%20til%20mitt%20prosjekt">Snakk med oss om ditt prosjekt <span aria-hidden="true">↗</span></a>
-        </div>
-        <div class="document-list">
-          <div><span class="check" aria-hidden="true">✓</span><div><h3>Tegninger</h3><p>Plan, mål og montasjedetaljer som gjør løsningen enklere å forstå.</p></div></div>
-          <div><span class="check" aria-hidden="true">✓</span><div><h3>Materialoversikter</h3><p>Oversikt over materialer og mengder som inngår i leveransen.</p></div></div>
-          <div><span class="check" aria-hidden="true">✓</span><div><h3>Fotodokumentasjon</h3><p>Bilder av arbeidet og relevante detaljer underveis.</p></div></div>
-          <div><span class="check" aria-hidden="true">✓</span><div><h3>FDV</h3><p>Dokumentasjon for forvaltning, drift og vedlikehold etter overlevering.</p></div></div>
-          <p class="scope-note">Dokumentasjonens innhold og omfang avtales for det enkelte oppdraget.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section wrap about" id="om-oss" aria-labelledby="about-heading">
-      <figure class="about-image">
-        <img src="assets/panelbygg.jpg" alt="Bygg med isolerte fasadepaneler i et vinterlandskap" width="2048" height="1536" loading="lazy">
-        <figcaption>Illustrasjonsfoto · Balex Metal</figcaption>
-      </figure>
-      <div class="about-copy">
-        <p class="eyebrow">OM STRAMO</p>
-        <h2 id="about-heading">En praktisk partner<br>for ditt prosjekt.</h2>
-        <p>Stramo AS holder til i Fredrikstad og leverer kjøle- og fryserom, bygg og montasje. Hos oss starter et oppdrag med en samtale om hva du trenger.</p>
-        <p>Har du en ferdig tegning, et rom som skal tilpasses eller en idé du vil diskutere? Ta kontakt, så ser vi på mulighetene sammen.</p>
-        <div class="about-location"><span class="location-dot" aria-hidden="true"></span> Kampenveien 4 · Fredrikstad</div>
-      </div>
-    </section>
-
-    <section class="contact-section" id="kontakt" aria-labelledby="contact-heading">
-      <div class="wrap contact-layout">
-        <div class="contact-intro">
-          <p class="eyebrow">LA OSS TA EN PRAT</p>
-          <h2 id="contact-heading">Hva kan vi<br>hjelpe deg med?</h2>
-          <p>Send oss noen ord om prosjektet ditt. Legg gjerne ved mål, bilder eller tegninger hvis du har det.</p>
-          <a class="button" href="mailto:post@stramo.no?subject=Prosjektforesp%C3%B8rsel%20til%20Stramo%20AS">Send oss e-post <span aria-hidden="true">↗</span></a>
-        </div>
-        <address class="contact-card">
-          <div class="contact-row">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M21 16.5v3a1.5 1.5 0 0 1-1.7 1.5C10.5 20.2 3.8 13.5 3 4.7A1.5 1.5 0 0 1 4.5 3h3l1.5 5-2 1.5a15 15 0 0 0 7.5 7.5l1.5-2 5 1.5Z"/></svg>
-            <div><h3>Telefon</h3><a href="tel:+4769878777">69 87 87 77</a></div>
-          </div>
-          <div class="contact-row">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 6 9 7 9-7"/></svg>
-            <div><h3>E-post</h3><a href="mailto:post@stramo.no">post@stramo.no</a></div>
-          </div>
-          <div class="contact-row">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
-            <div><h3>Besøksadresse</h3><a class="address-link" href="https://www.google.com/maps/search/?api=1&amp;query=Kampenveien%204%2C%201618%20Fredrikstad" target="_blank" rel="noopener noreferrer">Kampenveien 4<br>1618 Fredrikstad <span aria-hidden="true">↗</span><span class="sr-only"> (åpner kart i ny fane)</span></a></div>
-          </div>
-        </address>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer wrap">
-    <a class="footer-brand" href="#topp" aria-label="Stramo AS – til toppen"><img src="assets/stramo-logo.png" alt="Stramo AS" width="1600" height="740" loading="lazy"></a>
-    <div><p>© <span id="year">2026</span> Stramo AS</p><p>Org.nr. <a href="https://virksomhet.brreg.no/nb/oppslag/enheter/918776303" target="_blank" rel="noopener noreferrer" aria-label="Organisasjonsnummer 918 776 303 hos Brønnøysundregistrene, åpnes i ny fane">918 776 303</a></p></div>
-    <div class="footer-note"><p>Prøveversjon</p><p>Bilder fra <a href="https://balex.eu/en/products/sandwich-panels/pu-f-wall-sandwich-panel-polyurethane-core-cold-storage-applications" target="_blank" rel="noopener noreferrer">Balex Metal<span class="sr-only"> (åpner i ny fane)</span></a> er illustrasjoner.</p></div>
+  <footer class="page-footer">
+    <span>© <span id="year">2026</span> Stramo AS</span>
+    <span class="dot">·</span>
+    <span>Kampenveien 4, 1618 Fredrikstad</span>
   </footer>
+</main>
+
+<script src="js/script.js"></script>
 </body>
 </html>

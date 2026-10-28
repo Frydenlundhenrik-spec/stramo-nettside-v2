@@ -1,0 +1,224 @@
+/* ============================================================
+   Stramo AS – enkel landingsside med kontaktinformasjon
+   Fargepalett hentet fra logoen: mørk marineblå + gul-grønn.
+   ============================================================ */
+
+:root {
+  --navy: #0d3b54;
+  --navy-dark: #082735;
+  --navy-mid: #164863;
+  --accent: #e3e011;
+  --accent-dark: #c4c00f;
+  --bg: #ffffff;
+  --bg-alt: #f4f7fa;
+  --text: #1c2b36;
+  --text-muted: #5b6b76;
+  --border: #e2e8ee;
+  --radius: 14px;
+  --shadow: 0 4px 24px rgba(13, 59, 84, 0.08);
+  --shadow-lg: 0 12px 40px rgba(13, 59, 84, 0.14);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(1100px 520px at 82% -10%, rgba(227,224,17,0.14), transparent 60%),
+    linear-gradient(180deg, #f8fbfd 0%, var(--bg) 40%);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+a:focus-visible, summary:focus-visible { outline: 3px solid var(--navy); outline-offset: 5px; }
+h4 { margin: 0 0 4px; font-size: 15px; color: var(--navy-dark); }
+p { margin: 0; color: var(--text-muted); }
+
+/* ---------- Page layout ---------- */
+.page {
+  min-height: 100vh;
+  min-height: 100svh;
+  width: 100%;
+  padding: 60px 24px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.intro .logo { height: clamp(64px, 12svh, 120px); width: auto; margin: 0 auto 12px; }
+.tagline {
+  font-size: 17px;
+  line-height: 1.45;
+  font-weight: 600;
+  color: var(--navy-dark);
+  letter-spacing: 0.01em;
+}
+
+/* ---------- Contact ---------- */
+.contact-grid {
+  width: 100%;
+  max-width: 460px;
+  display: flex;
+}
+
+.contact-card {
+  width: 100%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  /* Kortet som helhet er sentrert på siden via .page, men selve teksten i
+     hver rad (adresse/telefon/åpningstider) skal stå på linje under
+     hverandre i stedet for å sentreres individuelt i hver rad. */
+  text-align: left;
+}
+
+.contact-row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+.contact-row:first-child { padding-top: 0; }
+.contact-row:last-child { border-bottom: none; padding-bottom: 8px; }
+.contact-row .ic {
+  flex-shrink: 0;
+  width: 36px; height: 36px;
+  border-radius: 10px;
+  background: rgba(13,59,84,0.06);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--navy);
+}
+.contact-row a.link { color: var(--navy); font-weight: 700; font-size: 15px; }
+.contact-row a.link:hover { text-decoration: underline; }
+
+.contact-actions { display: flex; gap: 14px; margin-top: 18px; flex-wrap: wrap; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 24px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 14.5px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+  white-space: nowrap;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn-primary {
+  background: var(--accent);
+  color: var(--navy-dark);
+  box-shadow: 0 6px 18px rgba(227, 224, 17, 0.35);
+}
+.btn-primary:hover { background: var(--accent-dark); }
+.btn-outline {
+  background: transparent;
+  border-color: var(--border);
+  color: var(--navy);
+}
+.btn-outline:hover { background: var(--bg-alt); }
+
+/* ---------- Footer ---------- */
+.page-footer {
+  margin-top: 22px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 12px;
+}
+.page-footer .dot { margin: 0 8px; }
+
+/* ---------- App login ---------- */
+.login-nav { position: absolute; top: 16px; right: 24px; z-index: 10; text-align: left; }
+.login-picker { position: relative; }
+.login-picker summary {
+  display: flex; align-items: center; gap: 9px; list-style: none;
+  min-height: 40px; padding: 8px 13px; border: 1px solid var(--border);
+  border-radius: 8px; background: white; color: var(--navy);
+  font-size: 13px; font-weight: 650; cursor: pointer;
+}
+.login-picker summary::-webkit-details-marker { display: none; }
+.login-picker summary:hover, .login-picker[open] summary { background: var(--bg-alt); border-color: var(--navy); }
+.login-picker[open] .login-chevron { transform: rotate(180deg); }
+.login-options {
+  position: absolute; top: calc(100% + 9px); right: 0; width: 275px;
+  max-width: calc(100vw - 32px); padding: 10px; background: white;
+  border: 1px solid var(--border); border-radius: 12px; box-shadow: var(--shadow-lg);
+}
+.login-label { padding: 4px 10px 8px; font-size: 11px; font-weight: 600; color: var(--text-muted); }
+.login-options a { display: flex; gap: 12px; align-items: center; padding: 12px 10px; border-radius: 7px; color: var(--navy); }
+.login-options a:hover { background: var(--bg-alt); }
+.login-options a > svg { flex-shrink: 0; }
+.login-options a > span:nth-of-type(1) { flex: 1; }
+.login-options strong { display: block; font-size: 14px; }
+.login-options small { display: block; font-size: 11px; color: var(--text-muted); font-weight: 400; margin-top: 2px; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+/* ---------- Reveal ---------- */
+.reveal { opacity: 1; transform: none; }
+.reveal-ready .reveal { opacity: 0; transform: translateY(14px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.reveal-ready .reveal.in { opacity: 1; transform: translateY(0); }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 720px) {
+  .page { padding: 64px 20px 16px; }
+  .intro { margin-bottom: 18px; }
+  .intro .logo { height: clamp(64px, 12svh, 100px); }
+  .contact-card { padding: 20px; }
+  .contact-actions { flex-direction: column; }
+  .contact-actions .btn { width: 100%; }
+  .login-nav { top: 12px; right: 20px; }
+}
+
+@media (max-width: 400px), (max-height: 620px) {
+  .page { padding: 58px 16px 12px; }
+  .intro { margin-bottom: 14px; }
+  .intro .logo { height: 64px; margin-bottom: 8px; }
+  .tagline { font-size: 15px; }
+  .contact-card { padding: 17px; }
+  .contact-row { gap: 12px; padding: 10px 0; }
+  .contact-row .ic { width: 34px; height: 34px; }
+  .contact-row h4 { font-size: 14px; }
+  .contact-row p { font-size: 13px; }
+  .contact-actions { margin-top: 14px; }
+  .page-footer { margin-top: 16px; padding-top: 10px; font-size: 11px; }
+  .login-nav { top: 10px; right: 16px; }
+}
+
+@media (max-height: 500px) and (min-width: 600px) {
+  .page { display: grid; grid-template-columns: minmax(180px, 1fr) minmax(300px, 1.2fr); gap: 6px 28px; padding: 52px 16px 8px; align-content: center; max-width: 880px; margin-inline: auto; }
+  .intro { margin-bottom: 0; }
+  .intro .logo { height: 84px; }
+  .contact-grid { max-width: 400px; }
+  .contact-card { padding: 14px 18px; }
+  .contact-row { padding-block: 6px; }
+  .contact-actions { margin-top: 10px; }
+  .page-footer { grid-column: 1 / -1; margin-top: 0; padding-top: 8px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-ready .reveal { opacity: 1; transform: none; transition: none; }
+  .btn { transition: none; }
+  .btn:hover { transform: none; }
+}

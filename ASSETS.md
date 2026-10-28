@@ -1,15 +1,10 @@
-# Bildekilder
+# Bilder og designreferanse
 
-Hentet 23. oktober 2026 etter brukerens ønske om bilder fra Balex uten deres logo.
+Gjeldende nettside følger brukerens filer i C:\Users\fryde\Desktop\stramo-nettside, oppgitt 28. oktober 2026.
 
-| Lokal fil | Kilde |
-| --- | --- |
-| `docs/assets/stramo-logo.png` | Eksisterende Stramo-logo i `stramo-app/assets/stramo_logo.png`; brukt uendret |
-| `docs/assets/kjolerom-hall.jpg` | https://balex.eu/en/images/product-gallery/plyta_chlodnicza_PIR/25552868_10155528256717400_757460072_o.jpg |
-| `docs/assets/panelbygg.jpg` | https://balex.eu/en/images/product-gallery/plyta_chlodnicza_PIR/25510937_10155528257032400_114341782_o.jpg |
+docs/assets/logo.png er kopiert uendret fra referansens assets/logo.png.
+SHA-256: 2E92E3BCE4F4DA1E00520DD92C02025C9B4C941FF37A2A5D09B1CC86F964E604.
 
-Galleri: https://balex.eu/en/products/sandwich-panels/pu-f-wall-sandwich-panel-polyurethane-core-cold-storage-applications
+HTML, CSS og JavaScript bygger på samme referanse. Etter brukerens videre ønsker er oppsettet gjort kompakt for å passe i skjermen, og en «Logg inn»-meny gir inngang til timeregistrering og kjøleromssystemet. Prøveversjonen har dessuten metadata for å unngå søkemotorindeksering, synlig tastaturfokus, årstall som reserve uten JavaScript og støtte for redusert bevegelse. Logo, farger og den oppgitte kontaktinformasjonen er beholdt.
 
-De to Balex-bildene er de uendrede originalfilene og har ingen synlig Balex-logo. Nettsiden beskjærer dem responsivt med CSS. Fotografiene tilhører sin respektive rettighetshaver. Det gis ingen ny bildelisens gjennom dette repositoriet.
-
-Bildene er merket som illustrasjonsfoto på nettsiden, ikke som Stramos egne gjennomførte prosjekter.
+Balex-bilder fra det tidligere utkastet brukes ikke i den gjeldende utgaven. Tidligere filer og kildeopplysninger finnes i Git-historikken.

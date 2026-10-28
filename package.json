@@ -2,6 +2,6 @@
   "name": "stramo-nettside-v2",
   "version": "1.0.0",
   "private": true,
-  "description": "Stramo AS – enkel statisk nettside for utprøving på GitHub Pages",
+  "description": "Stramo AS – enkel kontaktside basert på brukerens designfiler",
   "scripts": { "start": "node preview.mjs" }
 }

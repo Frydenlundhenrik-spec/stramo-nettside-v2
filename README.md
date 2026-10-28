@@ -1,52 +1,45 @@
-# Stramo AS – nettside v2
+# Stramo AS – prøveversjon av nettsiden
 
-En enkel, mobiltilpasset nettside for kjøle- og fryserom, bygg og montasje.
-Designet viderefører logoen, fargene og den enkle kontaktpresentasjonen fra den eldre Stramo-nettsiden.
+Nettsiden følger designfilene brukeren oppga 28. oktober 2026 fra Desktop/stramo-nettside: en sentrert logo, teksten «Leverandør av kjøl og fryserom» og ett kontaktkort. Oppsettet er gjort kompakt etter brukerens ønske om å slippe rulling, med en egen «Logg inn»-knapp øverst til høyre.
 
 - Prøveside: https://frydenlundhenrik-spec.github.io/stramo-nettside-v2/
 - GitHub: https://github.com/Frydenlundhenrik-spec/stramo-nettside-v2
-- All publisert kode ligger i `docs/`.
-- Ingen byggetrinn, pakkeinstallasjon, API-nøkler eller database.
+- Publisering: main → /docs på GitHub Pages.
+- Den originale nettsiden i repoet stramo-nettside skal ikke erstattes uten ny, uttrykkelig beskjed fra brukeren.
+
+## Filer
+
+- docs/index.html: logo, kort presentasjon, kontaktkort og bunntekst.
+- docs/css/style.css: utforming og mobiltilpasning.
+- docs/js/script.js: årstall, lukking av appmenyen og innlasting av innhold med en kort animasjon.
+- docs/assets/logo.png: Stramo-logoen fra de oppgitte designfilene.
+
+Kontaktinformasjonen og åpningstidene følger brukerens oppgitte HTML-fil. Telefon- og e-postlenkene åpner telefon/e-postprogrammet. Ingen skjemaer sender informasjon fra nettsiden.
+
+## Appinngang
+
+«Logg inn» viser to valg som åpnes i nye faner:
+
+- Timeregistrering: https://stramo-flyt-time-avvik.candid-pine-4284.chatgpt.site/login
+- Kjøl og frys: https://stramo-as-n7zzenre2auarxeuzha8pk.streamlit.app/
+
+Begge adresser er kontrollert i nettleseren. Stramo Flyt har egen testinnlogging. Kjøleromssystemet åpnes uten innlogging per 28. oktober 2026. Menyen er en inngang til appene og innfører ikke ny tilgangskontroll. Ingen brukernavn eller passord ligger i nettsiden.
+
+Oppsettet bruker Inter fra Google Fonts, som i referansefilene, med systemskrift som reserve. Siden fungerer også uten JavaScript, og animasjonen respekterer redusert bevegelse. Den offentlige prøveversjonen har noindex, nofollow; dette er en beskjed til søkemotorer, ikke tilgangskontroll.
 
 ## Lokal forhåndsvisning
 
-Med Node.js installert: dobbeltklikk `Start-Stramo-Nettside.cmd`, eller kjør:
+Åpne docs/index.html direkte i nettleseren, eller dobbeltklikk Start-Stramo-Nettside.cmd med Node.js installert. Fra PowerShell:
 
 ```powershell
 cd "C:\Users\fryde\Documents\ChatGPT\Stramo\stramo-nettside"
 npm start
 ```
 
-Åpne http://127.0.0.1:4321/. Stopp med Ctrl+C.
+Åpne http://127.0.0.1:4321/. Stopp serveren med Ctrl+C.
 
-`docs/index.html` kan også åpnes direkte i nettleseren.
+Ingen pakkeinstallasjon eller byggeprosess er nødvendig. Endringer som pushes til main publiseres automatisk på prøveadressen.
 
-## Videre arbeid
+## Tidligere utkast
 
-- `docs/index.html`: innhold, tjenester og kontaktinformasjon.
-- `docs/styles.css`: farger, utforming og mobilvisning.
-- `docs/script.js`: mobilmeny og årstall.
-- `docs/assets/`: logo og bilder.
-
-GitHub Pages publiserer `main` → `/docs`. Lagre og push endringer til `main` for å oppdatere prøvesiden.
-Den gamle nettsiden og repoet `stramo-nettside` er ikke endret.
-
-## Innhold og kontakt
-
-Kampenveien 4, 1618 Fredrikstad er bekreftet av brukeren.
-Telefon 69 87 87 77 og post@stramo.no er hentet fra den eksisterende nettsiden.
-Organisasjonsnummer 918 776 303 er kontrollert mot Brønnøysundregistrene.
-Tjenesteområdene og teksten om tegninger, materialoversikter, fotodokumentasjon og FDV er laget etter brukerens bestilling.
-Dokumentasjonens omfang avtales per oppdrag.
-
-Kontaktknappene åpner telefon eller e-postprogram; nettsiden har ingen skjemaer som lagrer eller sender informasjon selv.
-Siden bruker ingen analyseverktøy, informasjonskapsler eller eksterne skrifttjenester.
-Prøveversjonen har `noindex, nofollow` og en synlig merking i bunnteksten. Den er tilgjengelig for alle med lenken; noindex er ikke tilgangskontroll.
-
-## Bilder
-
-Stramo-logoen er hentet uendret fra firmaets lokale prosjektfiler.
-De to illustrasjonsbildene er hentet fra Balex Metals offentlige PIR FROST-galleri etter brukerens instruks.
-De valgte originalene har ingen synlig Balex-logo; ingen retusjering er utført.
-Bildene er merket som illustrasjonsfoto og representerer ikke dokumenterte Stramo-referanseprosjekter.
-Kildelenker og filnavn står i `ASSETS.md`.
+Det tidligere utkastet med tjenesteseksjoner, Balex-bilder og dokumentasjonsreklame finnes i Git-historikken på commit c595c99. Designfilene på skrivebordet er kun lest og er ikke endret.
