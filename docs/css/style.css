@@ -151,29 +151,14 @@ p { margin: 0; color: var(--text-muted); }
 
 /* ---------- App login ---------- */
 .login-nav { position: absolute; top: 16px; right: 24px; z-index: 10; text-align: left; }
-.login-picker { position: relative; }
-.login-picker summary {
-  display: flex; align-items: center; gap: 9px; list-style: none;
+.login-link {
+  display: flex; align-items: center; gap: 9px;
   min-height: 40px; padding: 8px 13px; border: 1px solid var(--border);
   border-radius: 8px; background: white; color: var(--navy);
-  font-size: 13px; font-weight: 650; cursor: pointer;
+  font-size: 13px; font-weight: 650;
 }
-.login-picker summary::-webkit-details-marker { display: none; }
-.login-picker summary:hover, .login-picker[open] summary { background: var(--bg-alt); border-color: var(--navy); }
-.login-picker[open] .login-chevron { transform: rotate(180deg); }
-.login-options {
-  position: absolute; top: calc(100% + 9px); right: 0; width: 275px;
-  max-width: calc(100vw - 32px); padding: 10px; background: white;
-  border: 1px solid var(--border); border-radius: 12px; box-shadow: var(--shadow-lg);
-}
-.login-label { padding: 4px 10px 8px; font-size: 11px; font-weight: 600; color: var(--text-muted); }
-.login-options a { display: flex; gap: 12px; align-items: center; padding: 12px 10px; border-radius: 7px; color: var(--navy); }
-.login-options a:hover { background: var(--bg-alt); }
-.login-options a > svg { flex-shrink: 0; }
-.login-options a > span:nth-of-type(1) { flex: 1; }
-.login-options strong { display: block; font-size: 14px; }
-.login-options small { display: block; font-size: 11px; color: var(--text-muted); font-weight: 400; margin-top: 2px; }
-.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.login-link:hover { background: var(--bg-alt); border-color: var(--navy); }
+.login-link:focus-visible { outline: 3px solid var(--navy); outline-offset: 3px; }
 
 /* ---------- Reveal ---------- */
 .reveal { opacity: 1; transform: none; }
